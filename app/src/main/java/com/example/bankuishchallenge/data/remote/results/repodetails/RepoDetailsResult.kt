@@ -3,6 +3,7 @@ package com.example.bankuishchallenge.data.remote.results.repodetails
 import com.example.bankuishchallenge.data.remote.results.searchrepo.Owner
 import com.squareup.moshi.Json
 
+//Result from GET repositories/{repo_id}
 data class RepoDetailsResult(
     @Json(name = "name") val name: String,
     @Json(name = "created_at") val createdAt: String,

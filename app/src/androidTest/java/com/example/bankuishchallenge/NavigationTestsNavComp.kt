@@ -58,7 +58,7 @@ class NavigationTestsNavComp {
             .perform(
                 RecyclerViewActions
                     .actionOnItemAtPosition<RecyclerView.ViewHolder>(0, ViewActions.click()))
-        //Assert that current destination is movieDetailFragment
+        //Assert that current destination is repoDetailsFragment
         Assert.assertEquals(navController.currentDestination?.id, R.id.repoDetailsFragment)
     }
 }

@@ -68,7 +68,7 @@ class RepoListFragment : Fragment() {
     }
 
     private fun setListeners() {
-        //Retry button after an error, to reload movies
+        //Retry button after an error, to reload repoList
         binding.retryButton.setOnClickListener { pagedListAdapter.retry() }
     }
 

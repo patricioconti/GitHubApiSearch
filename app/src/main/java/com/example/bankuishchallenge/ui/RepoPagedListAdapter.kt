@@ -35,7 +35,7 @@ class RepoPagedListAdapter (private val repoClickedListener: (Repo) -> Unit) :
         if (repo != null) {
             holder.bind(repo)
             // When clicking on an itemView of the recycler view then
-            // call lambda repoClickedListener passing parameter repo (repo in current the position)
+            // call lambda repoClickedListener passing parameter repo (repo in current position)
             holder.itemView.setOnClickListener { repoClickedListener(repo)
             }
         }

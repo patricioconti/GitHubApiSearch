@@ -56,9 +56,9 @@ class RepoDetailsFragment: Fragment() {
 
     //Get repo details passing repoId to the viewModel
     private fun getRepoDetails() {
-        //Take movieId passed from Repo List fragment
+        //Take repoId passed from Repo List fragment
         val repoId = navigationArgs.repoId
-        //Call getRepoDetails from viewModel passing movieId
+        //Call getRepoDetails from viewModel passing repoId
         viewModel.getRepoDetails(repoId)
     }
 
@@ -119,7 +119,7 @@ class RepoDetailsFragment: Fragment() {
                 delimiter = 'T',
                 missingDelimiterValue = getString(R.string.not_found)
             )
-            //Load movie images with coil
+            //Load avatar image with coil
             repoAvatarImage.load(repoDetails.ownerDetails.avatarUrl) {
                 //Set image at error
                 error(R.drawable.ic_broken_image)

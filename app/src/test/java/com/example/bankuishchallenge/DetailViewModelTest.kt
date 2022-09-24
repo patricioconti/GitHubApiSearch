@@ -69,7 +69,7 @@ class DetailViewModelTest {
         //mockRepoId
         val mockRepoId = 1234
 
-        //Set repoRepository to always return mockRepositoryResultMovieDetails
+        //Set repoRepository to always return mockRepositoryResultRepoDetails
         whenever(repoRepository.getRepoDetails(mockRepoId)).thenReturn(
             mockRepositoryResultRepoDetails
         )
