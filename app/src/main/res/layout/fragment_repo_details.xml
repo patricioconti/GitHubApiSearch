@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/margin_between_elements"
+    tools:context=".ui.RepoDetailsFragment">
+
+    <TextView
+        android:id="@+id/repoNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_between_elements"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        android:text="@string/repository_name_label"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginStart="@dimen/margin_between_elements"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+
+    <!-- width 0dp an EndToEndOf parent to avoid text getting cut -->
+
+    <TextView
+        android:id="@+id/repoName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/repoNameLabel"
+        android:layout_marginStart="@dimen/margin_between_elements"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/margin_between_elements"
+        tools:text="This is the repository Name" />
+
+    <TextView
+        android:id="@+id/repoAuthorLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_between_elements"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        android:text="@string/repo_author_label"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/repoName"
+        app:layout_constraintStart_toStartOf="@id/repoNameLabel" />
+
+    <TextView
+        android:id="@+id/repoAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        android:textSize="16sp"
+        app:layout_constraintTop_toTopOf="@id/repoAuthorLabel"
+        app:layout_constraintStart_toEndOf="@id/repoAuthorLabel"
+        android:layout_marginStart="@dimen/margin_between_elements"
+        tools:text="Peter Sullivan"/>
+
+    <TextView
+        android:id="@+id/repoCreationDateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_between_elements"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        android:text="@string/creation_date_label"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/repoAuthorLabel"
+        app:layout_constraintStart_toStartOf="@id/repoNameLabel" />
+
+    <TextView
+        android:id="@+id/repoCreationDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        android:textSize="16sp"
+        app:layout_constraintTop_toTopOf="@id/repoCreationDateLabel"
+        app:layout_constraintStart_toEndOf="@id/repoCreationDateLabel"
+        android:layout_marginStart="@dimen/margin_between_elements"
+        tools:text="10-03-22"/>
+
+    <TextView
+        android:id="@+id/repoDescriptionLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_between_elements"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        android:text="@string/description_label"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/repoCreationDateLabel"
+        app:layout_constraintStart_toStartOf="@id/repoNameLabel" />
+
+    <TextView
+        android:id="@+id/repoDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/repoDescriptionLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="@dimen/margin_between_elements"
+        android:layout_marginEnd="@dimen/margin_between_elements"
+        tools:text="This is the best repository to learn how to use retrofit and work manager"/>
+
+    <TextView
+        android:id="@+id/repoUrlLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_between_elements"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        android:text="@string/url_label"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/repoDescription"
+        app:layout_constraintStart_toStartOf="@id/repoNameLabel" />
+
+    <TextView
+        android:id="@+id/repoUrl"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        android:textSize="16sp"
+        app:layout_constraintTop_toTopOf="@id/repoUrlLabel"
+        app:layout_constraintStart_toEndOf="@id/repoUrlLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="@dimen/margin_between_elements"
+        android:layout_marginEnd="@dimen/margin_between_elements"
+        android:autoLink="web"
+        android:textColorLink="#03A9F4"
+        tools:text="https://github.com/JetBrains/kotlin"/>
+
+    <TextView
+        android:id="@+id/repoStargazersCountLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_between_elements"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        android:text="@string/stargazers_count_label"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/repoUrl"
+        app:layout_constraintStart_toStartOf="@id/repoNameLabel" />
+
+    <TextView
+        android:id="@+id/repoStargazersCount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        android:textSize="16sp"
+        app:layout_constraintTop_toTopOf="@id/repoStargazersCountLabel"
+        app:layout_constraintStart_toEndOf="@id/repoStargazersCountLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="@dimen/margin_between_elements"
+        android:layout_marginEnd="@dimen/margin_between_elements"
+        tools:text="29872"/>
+
+    <TextView
+        android:id="@+id/repoUpdatedDateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_between_elements"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        android:text="@string/updated_date_label"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/repoStargazersCountLabel"
+        app:layout_constraintStart_toStartOf="@id/repoNameLabel" />
+
+    <TextView
+        android:id="@+id/repoUpdatedDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        android:textSize="16sp"
+        app:layout_constraintTop_toTopOf="@id/repoUpdatedDateLabel"
+        app:layout_constraintStart_toEndOf="@id/repoUpdatedDateLabel"
+        android:layout_marginStart="@dimen/margin_between_elements"
+        tools:text="10-09-22"/>
+
+    <ImageView
+        android:id="@+id/repoAvatarImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launcher_foreground"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/avatar_picture"
+        app:layout_constraintStart_toStartOf="@id/repoNameLabel"
+        app:layout_constraintTop_toBottomOf="@id/repoUpdatedDateLabel"
+        android:layout_marginTop="@dimen/margin"/>
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/repoDetailsData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="repoNameLabel,repoName,repoAuthorLabel,repoAuthor,
+        repoCreationDateLabel,repoCreationDate,repoDescriptionLabel,repoDescription,
+        repoUrlLabel,repoUrl,repoStargazersCountLabel,repoStargazersCount,repoUpdatedDateLabel,
+        repoUpdatedDate,repoAvatarImage"/>
+
+    <ImageView
+        android:id="@+id/status_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_connection_error"
+        android:contentDescription="@string/error_message"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.core.widget.ContentLoadingProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

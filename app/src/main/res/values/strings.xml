@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Bankuish Challenge</string>
+    <string name="repository_name_label"><u>Name:</u></string>
+    <string name="repo_author_label"><u>Author:</u></string>
+    <string name="repository_details_fragment_label">Repository Details</string>
+    <string name="error_message">An error has occurred</string>
+    <string name="retry">Retry</string>
+    <string name="creation_date_label"><u>Created:</u></string>
+    <string name="description_label"><u>Description:</u></string>
+    <string name="url_label"><u>Url:</u></string>
+    <string name="stargazers_count_label"><u>Stargazers count:</u></string>
+    <string name="updated_date_label"><u>Updated:</u></string>
+    <string name="not_found">T not found</string>
+    <string name="avatar_picture">Avatar picture</string>
+</resources>
