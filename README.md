@@ -34,11 +34,11 @@ Kotlin
 
 Screenshots
 --------------
-<img src="./screenshots/GHASR_HomeLoading.jpeg" width="45%" height="45%">&ensp;<img src="./screenshots/GHASR_HomeLoaded.jpeg" width="45%" height="45%">
+<img src="./screenshots/GHASR_HomeLoading.jpeg" width="30%" height="30%">&ensp;<img src="./screenshots/GHASR_HomeLoaded.jpeg" width="30%" height="30%">
 
-<img src="./screenshots/GHASR_HomeError.jpeg" width="45%" height="45%">&ensp;<img src="./screenshots/GHASR_DetailsLoaded.jpeg" width="45%" height="45%">
+<img src="./screenshots/GHASR_HomeError.jpeg" width="30%" height="30%">&ensp;<img src="./screenshots/GHASR_DetailsLoaded.jpeg" width="30%" height="30%">
 
-<img src="./screenshots/GHASR_DetailsError.jpeg" width="45%" height="45%">
+<img src="./screenshots/GHASR_DetailsError.jpeg" width="30%" height="30%">
 
 Purpose
 --------------
