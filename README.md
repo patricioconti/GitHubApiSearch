@@ -27,35 +27,6 @@ Instrumentation tests
 Architecture: MVVM
 --------------
 <img src="./screenshots/GHASR_Architecture.jpg" width="100%" height="100%">
-GitHubApiSearch App
-===================================
-
-Overview
---------------
-An app that consumes a REST API from GitHub and displays the results on the UI.
-
-The HomeFragment uses a recyclerView to display a list of GitHub repositories in kotlin:language. 
-
-The app gets the first page of the service, and as the user scrolls down, it requests more pages using Paging Library.
-
-When the user clicks on an item from the list, a DetailFragment is shown displaying repository details.
-
-Network errors were handled.
-
-A retry button is also shown in the HomeFragment after an error.
- 
-Unit tests
---------------
-* DetailViewModelTests
-* API service test using a mockServer and a local .json file
-
-Instrumentation tests
---------------
-* NavigationTests using the TestNavHostController
-
-Architecture: MVVM
---------------
-<img src="./screenshots/GHASR_Architecture.jpg" width="100%" height="100%">
 
 Language 
 --------------
